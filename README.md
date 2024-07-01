@@ -137,8 +137,6 @@ namespace FactoryPatternDI
                 return;
             }
 
-            Console.WriteLine("Hello, World!");
-
             while (true)
             {
                 Console.WriteLine("Enter type of product to do work:");
