@@ -1,5 +1,4 @@
 ﻿using FactoryPatternDI.Factories;
-using FactoryPatternDI.Interfaces;
 using FactoryPatternDI.Models.Products;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -23,8 +22,6 @@ namespace FactoryPatternDI
                 Console.ReadLine();
                 return;
             }
-
-            Console.WriteLine("Hello, World!");
 
             while (true)
             {
