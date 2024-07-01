@@ -31,10 +31,10 @@ The application demonstrates initializing workers that were created via a factor
 
 ### Factory Pattern
 
-- **ILogger.cs**: Interface for loggers.
-- **ConsoleLogger.cs**: Logs messages to the console.
-- **FileLogger.cs**: Logs messages to a file.
-- **LoggerFactory.cs**: Factory for creating logger instances.
+- **IProduct.cs**: Interface for workers (the 'product' in a factory pattern).
+- **ConcreteProductA.cs**: A concrete implementation of IProduct.
+- **ConcreteProductB.cs**: Another implementation of IProduct.
+- **ProductFactory.cs**: Factory for creating worker instances.
 
 ### Dependency Injection
 
@@ -42,7 +42,7 @@ The application demonstrates initializing workers that were created via a factor
 
 ### Async/Await
 
-- **App.cs**: Contains the `RunAsync` method that logs messages asynchronously.
+- **ProductFactory.cs**: Contains the `AsyncAwait`code that simulates fetching resources during the creation of the worker instances. Could be useful to retrieve API keys or other config-related resources that are hosted outside of the app.
 
 ### Example Code
 
